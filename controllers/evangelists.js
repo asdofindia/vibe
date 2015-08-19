@@ -2,7 +2,7 @@ angular.module("vibe")
 
 .controller("evangelistsCtrl", function($scope, $http) {
 
-	$http.get("/evangelists.json")
+	$http.get("evangelists.json")
 	    .success(function (data) {
 	    	$scope.evangelists = data;
 	    })
